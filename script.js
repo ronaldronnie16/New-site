@@ -1,109 +1,108 @@
-// MANUAL PRODUCT DATA (30 Items)
 const furnitureItems = [
     { 
         id: 1,
         name: 
-        "L-Shaped Royal Sofa",
-        old: 1100000,
-        new: 900000,
-        img: "images//5-seater.jpg"
+        "TV Stand",
+        old: 470000,
+        new: 450000,
+        img: "images//tv-stand.jpg"
     },
     
     { 
         id: 2, 
-        name: "Mahogany Dining Table",
+        name: "Round Dinning Table",
         old: 600000,
         new: 500000,
-        img: "images//dinning table.jpg"
+        img: "images//Round Dinning Table.jpg"
     },
     
     { 
         id: 3,
-        name: "King Size Velvet Bed",
-        old: 1200000,
-        new: 1100000,
-        img: "images//bed.jpg"
+        name: "6 Seater MI Sofaset",
+        old: 1450000,
+        new: 1400000,
+        img: "images//6 seater MI sofaset.jpg"
     },
     
     { 
         id: 4,
-        name: "Leafy Centre Table",
-        old: 200000,
-        new: 170000, 
-        img: "images//leafy-centretable.jpg"
+        name: "6 Seater Dinning Table",
+        old: 1450000,
+        new: 1400000, 
+        img: "images//6 seater dining table.jpg"
     },
    
     { 
         id: 5,
-        name: "Office Executive Chair",
-        old: 100000,
-        new: 90000,
-        img: "images//executive.jpg"
+        name: "Majesty Dad Chair (Introduction)",
+        old: 650000,
+        new: 600000,
+        img: "images//Majesty Dad Chair (Introduction).jpg"
     },
     
     { 
         id: 6,
-        name: "Centre Table + TV Stand", 
-        old: 250000,
-        new: 180000,
-        img: "images//centretable.jpg"
+        name: "Marble Centre Table", 
+        old: 650000,
+        new: 600000,
+        img: "images//Marble centre table.jpg"
     },
    
     {
         id: 7, 
-        name: "Staff Chair",
-        old: 80000,
-        new: 70000,
-        img: "images//chair.jpg" 
+        name: "Modern Living Cupboard",
+        old: 550000,
+        new: 500000,
+        img: "images//Modern Living Cupboard.jpg" 
     },
     
     { 
         id: 8,
-        name: "3-Door Wardrobe", 
-        old: 800000,
-        new: 700000,
-        img: "images//wardrobe.jpg"
+        name: "Family Round Table Dinning(6 Seater)", 
+        old: 1550000,
+        new: 1500000,
+        img: "images//Family Circle Dining Table (6-Seater).jpg"
     },
     
     { 
         id: 9, 
-        name: "TV Stand",
-        old: 180000,
-        new: 150000, 
-        img: "images//tv-stand.jpg"
+        name: "Executive Dinning Table",
+        old: 2850000,
+        new: 2800000, 
+        img: "images//Executive-dinning.jpg"
     },
     
     {
         id: 10,
-        name: "Classic Armchair",
-        old: 100000,
-        new: 80000, 
-        img: "images//classic-chair.jpg"
+        name: "6 Seater MI Sofa Set",
+        old: 1450000,
+        new: 1400000, 
+        img: "images//6 seater MI sofaset.jpg"
     },
     
     {
     id: 11, 
-    name: "Wooden frame + Door",
-    old: 600000,
-    new: 550000, 
-    img: "images//door-frame.jpg" 
+    name: "Wooden Doors (1)",
+    old: 200000,
+    new: 180000, 
+    img: "images//Wooden doors.jpg" 
     },
     { 
-        id: 12, name: 'Sofa Chair',
-        old: 120000, 
-        new: 100000, 
-        img: "images//soft-chair.jpg"
+        id: 12, name: '4 Seater Wooden Dinning Table',
+        old: 600000, 
+        new: 550000, 
+        img: "images//4 seater wooden dinning table.jpg"
     },
     
     {
         id: 13,
-        name: "Centre Table",
-        old: 300000,
-        new: 250000,
-        img: "images//Centre table.jpg"
+        name: "6 Seater Wooden Dinning Table",
+        old: 1300000,
+        new: 1250000,
+        img: "images//.6 seater wooden dinning table.jpg"
     },
     
-    { 
+    /*{ 
         id: 14,
         name: "Wooden Door Frame",
         old: 200000,
@@ -117,7 +116,7 @@ const furnitureItems = [
         old: 700000,
         new: 600000,
         img: "images//office chair.jpg"
-    }
+    }*/
     
 ];
 
@@ -127,7 +126,7 @@ let showingAll = false;
 
 function displayProducts(filter = "") {
     const grid = document.getElementById('product-display');
-    const limit = showingAll ? 15 : 10;
+    const limit = showingAll ? 13 : 7;
     
     const filteredItems = furnitureItems.filter(item => 
         item.name.toLowerCase().includes(filter.toLowerCase())

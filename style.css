@@ -23,7 +23,7 @@ body {
 
 .hero-bg {
     height: 350px;
-    background: url('images//furniture-show.jpg') center / cover;
+    background: url('images//variety furniture.jpg') center / cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,9 +37,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(furniture-show.jpg);
-   background-color: rgba(13, 126, 60, 0.3);
-    backdrop-filter: blur(3px);
+    /*background-image: url('images//variety furniture.jpg');*/
+   background-color: #7B107E6B;
+    backdrop-filter: blur(1px);
     z-index: 1;
 }
 
@@ -318,3 +318,6 @@ footer {
     text-align: center; 
 }
 
+h1{
+    color: #5C0D75;
+}
