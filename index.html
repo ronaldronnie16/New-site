@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biyinzika Discount Centre | Premium Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <a href="https://wa.me/256787141752" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <header id="home">
+        <div class="hero-bg">
+            <div class="hero-text">
+                <h1 class="logo-red">BIYINZIKA DISCOUNT CENTRE</h1>
+                <p class="gold-tag">Quality Furniture & Professional Sofa Repair</p>
+                <div class="contact-strip">
+                    <span><i class="fas fa-phone"></i> +256 701 275772</span>
+                    <span><i class="fab fa-whatsapp"></i> +256 787 141752</span>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#products">PRODUCTS</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+            </ul>
+        </nav>
+        
+        <div class="cart-bar" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i> CART (<span id="cart-count">0</span>) - VIEW ORDER
+        </div>
+    </header>
+
+    <main>
+        <section id="products" class="container">
+            <h2 class="section-title">Exclusive Furniture Collection</h2>
+            
+            <div class="search-box">
+                <input type="text" id="furnitureSearch" placeholder="Search for furniture (e.g. Sofa, Bed, Table)..." onkeyup="searchFurniture()">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="product-grid" id="product-display">
+                </div>
+
+            <div class="center" id="view-more-container">
+                <button class="view-more-btn" onclick="revealAllProducts()">View More Products <i class="fas fa-chevron-down"></i></button>
+            </div>
+        </section>
+
+        <section id="services" class="service-cont">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Sofa Set Repair</h3>
+                    <p>We do professional upholstery, high-density foam replacement, and frame reinforcement. We bring your old sofas back to life with premium fabrics.</p>
+                    <img class="ser-image" src="images//sofa-repair.jpg" alt="Repair Sofa Set" />
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-glass-cheers"></i>
+                    <h3>Events Planning</h3>
+                    <p>We provide furniture rentals and décor for weddings, parties, and corporate functions. Quality seating for your guests is our priority.</p>
+                    <img class="ser-image" src="images//classic-chair.jpg" alt="party chair" />
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="about-content">
+                <p><strong>Location:</strong> Maya, After St. Lawrence London College School, Kampala-Masaka Road.</p>
+                <p><strong>Hours:</strong> Mon - Sat: 8:00 AM - 9:00 PM</p>
+                <p>We provide a 10% discount on all wooden doors and door frames made to order.</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Your Selection</h3>
+            <span class="close-sidebar" onclick="toggleCart()">&times;</span>
+        </div>
+        <div id="cart-items" class="cart-body">
+            </div>
+        <div class="sidebar-footer">
+            <div class="delivery-selection">
+                <p>Delivery Method:</p>
+                <label><input type="radio" name="delivery" value="0" checked onchange="updateTotal()"> Pickup (Maya) - Free</label><br>
+                <label><input type="radio" name="delivery" value="20000" onchange="updateTotal()"> Home Delivery - 20k</label>
+            </div>
+            <div class="total-row">
+                <strong>Total: <span id="grand-total">UGX 0</span></strong>
+            </div>
+            <button class="checkout-btn" onclick="sendToWhatsApp()">
+                <i class="fab fa-whatsapp"></i> CONFIRM ORDER
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <p>Biyinzika Discount Centre &copy; 2026</p>
+        </div>
+        <div class="rjj-footer">
+            <p>Developed by <strong>RJJ CONSULTS</strong></p>
+            <p><i class="fas fa-envelope"></i> rjjconsults1@gmail.com</p>
+            <p><i class="fab fa-whatsapp"></i> +256 744 139 867</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
