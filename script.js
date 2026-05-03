@@ -99,7 +99,7 @@ const furnitureItems = [
         name: "6 Seater Wooden Dinning Table",
         old: 1300000,
         new: 1250000,
-        img: "images//.6 seater wooden dinning table.jpg"
+        img: "images//6 seater wooden dinning table.jpg"
     },
     
     /*{ 
