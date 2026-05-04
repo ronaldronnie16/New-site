@@ -11,8 +11,8 @@ const furnitureItems = [
     { 
         id: 2, 
         name: "Round Dinning Table",
-        old: 600000,
-        new: 500000,
+        old: 1600000,
+        new: 1550000,
         img: "images//Round Dinning Table.jpg"
     },
     
@@ -74,10 +74,10 @@ const furnitureItems = [
     
     {
         id: 10,
-        name: "6 Seater MI Sofa Set",
-        old: 1450000,
-        new: 1400000, 
-        img: "images//6 seater MI sofaset.jpg"
+        name: "5 Seater  Sofa Set",
+        old: 1300000,
+        new: 1250000, 
+        img: "images//5 seater sofa set.jpg"
     },
     
     {
